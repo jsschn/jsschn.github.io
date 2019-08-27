@@ -1,11 +1,106 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Página de prueba<title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
 </head>
 <body>
-  <h1>Hola amiguitos!</h1>
-  <footer>gpuma 2017</footer>
+	<div class="content">
+		<!---------------------------HELLO------------------------->
+		<div class="hello">
+			<a id="hello-link"> </a>
+			<div class="hello-title">Hello,</div>
+			<div class="hello-copy-intro">
+				<p>My name is Jessie (she/her).
+					I'm a Taiwanese-Canadian product designer from Vancouver, currently living as a polite expat in San Francisco.</p>
+			</div>
+			<div class="hello-copy-now">I design <a class="link" href="#dx-link">developer experience</a> for Apple.
+			</div>
+			<div class="hello-copy-before">
+				<p>Previously, I created <a class="link" href="#aviation-link">aviation analytics products</a> for Boeing,
+					built <a class="link" href="#dataviz-link">data visualization</a>, and
+					conducted research in <a class="link" href="#vision-science-link">vision science</a>.
+				</p>
+			</div>
+			<div class="hello-copy-disclaimer">* Due to NDAs, you won't find details of my work
+				on B2B solutions and internal platforms here. <a class="link" href="mailto:itsjessiechen@gmail.com">Contact me</a> to learn more.</div>
+		</div>
+		<!----------------------DX------------------------->
+		<div class="dx">
+			<a id="dx-link"> </a>
+			<div class="dx-title">
+				<h1>Developer Experience</h1>
+			</div>
+			<div class="dx-copy">
+				<p>some really important blurb about what i'm working on for Apple</p>
+				<img class="dx-img" src="images/dx.svg" alt="dx">
+			</div>
+		</div>
+		<!----------------------AVIATION------------------------->
+		<div class="aviation">
+			<a id="aviation-link"> </a>
+			<div class="aviation-title">
+				<h1>Aviation</h1>
+			</div>
+			<div class="aviation-copy">
+				<p>some really important blurb about what i did when i worked for Boeing</p>
+				<img class="aviation-img" src="images/aviation.svg" alt="aviation">
+			</div>
+		</div>
+		<!----------------------DATAVIZ------------------------->
+		<div class="dataviz">
+			<a id="dataviz-link"> </a>
+			<div class="dataviz-title">
+				<h1>Data Visualization</h1>
+			</div>
+			<div class="dataviz-copy">
+				<p>I worked as a data designer for an atomic startup in Vancouver, BC, where I designed and built many interactive data dashboards
+					in-house for our main client, Boeing.</p>
+				<img class="dataviz-img" src="images/dataviz.svg" alt="dataviz">
+				<p>I learned the true meaning of full stack here - conducting user research, working with database engineers on data and API definitions,
+					wrangling data, sketching out chart specs and interactions, and building fully functional dashboards.</p><br>
+				<p>Outside of Boeing work, I also had a lot of fun creating <a class="link" href="https://public.tableau.com/profile/jessie.chen#!/">data stories</a> to promote our startup.</p><br>
+				<p>Here, I refined my own design and development process, learned to roll with the ambiguity and chaos that is
+					startup life, and also leveled up in navigating the intricacies of a massive organization like Boeing.</p>
+			</div>
+		</div>
+		<!----------------------VISION SCIENCE------------------------->
+		<div class="vision-science">
+			<a id="vision-science-link"> </a>
+			<div class="vision-science-title">
+				<h1>Vision Science</h1>
+			</div>
+			<div class="vision-science-copy">
+				<p>At the <a class="link" href="https://www.ubc.ca">University of British Columbia</a>, I managed the
+					<a class="link" href="https://viscoglab.psych.ubc.ca/">Visual Cognition Lab</a> and worked on research projects
+					that explored interesting quirks with human visual perception.</p><br>
+				<img class="vision-science-img" src="images/vision-science.svg" alt="vision-science">
+				<p>On one project, we created data visualization using radical encodings such as luminance and orientation,
+				to see whether people can effectively understand correlation from those unconventional charts.</p><br>
+				<p>I spent most of my time programming, performing statistical analysis, running experiments, and having a blast making data beautiful.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="navigation">
+
+		<nav class="nav">
+			<p> <a class="nav-link" href="#hello-link">Hello</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+					<a class="nav-link" href="#dx-link">DX</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+					<a class="nav-link" href="#aviation-link">Aviation</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+					<a class="nav-link" href="#dataviz-link">DataViz</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+					<a class="nav-link" href="#vision-science-link">Vision Science</a>
+			</p>
+		</nav>
+
+		<nav class="bottom-nav">
+			<a class="social" href="https://www.linkedin.com/in/jsschn" target="_blank">
+  			<img src="images/linkedin.svg" alt="LinkedIn" style="width:20px;height:20px;padding:8px;border:0;"></a>
+			<a class="social" href="https://www.twitter.com/jeckenzie" target="_blank">
+  			<img src="images/twitter.svg" alt="Twitter" style="width:22px;height:22px;padding:8px;border:0;"></a>
+			<a class="social" href="mailto:itsjessiechen@gmail.com" target="_blank">
+  			<img src="images/mail.svg" alt="Email" style="width:20px;height:20px;padding:8px;border:0;"></a>
+		</nav>
+	</div>
 </body>
-</html>
