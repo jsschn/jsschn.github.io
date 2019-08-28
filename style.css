@@ -74,25 +74,7 @@ a.nav-link:hover{
 	min-width: 300px;
 }
 
-.hello-copy-intro{
-	padding: 16px 0;
-	font-family: 'Roboto Mono', monospace;
-	color: #142D3D;
-	line-height: 24px;
-	width: 40%;
-	min-width: 300px;
-}
-
-.hello-copy-before{
-	padding: 16px 0;
-	font-family: 'Roboto Mono', monospace;
-	color: #142D3D;
-	line-height: 24px;
-	width: 40%;
-	min-width: 300px;
-}
-
-.hello-copy-now{
+.hello-copy{
 	padding: 16px 0;
 	font-family: 'Roboto Mono', monospace;
 	color: #142D3D;
