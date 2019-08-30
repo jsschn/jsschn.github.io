@@ -6,49 +6,44 @@ html{
 	scroll-behavior: smooth;
 }
 
-/*----------------------LINK STYLES-------------------------*/
-a,
-a:link{
-	font-weight: bolder;
+*{
+	font-family: 'Roboto Mono', monospace !important;
 	color: #142D3D;
-	text-decoration: none;
-	font-family: 'Roboto Mono', monospace;
-	}
-a:hover{
-	background-color: #F1F080;
-	font-weight: bolder;
-	font-family: 'Roboto Mono', monospace;
-}
-a:visited,
-a:active,
-a:focus{
-	background-color: #F1F080;
-	text-decoration: none;
-	font-weight: bolder;
-	font-family: 'Roboto Mono', monospace;
-	}
-a.social:hover{
-		padding-bottom: 10px;
-		background-color: #142D3D;
-		font-family: 'Roboto Mono', monospace;
-	}
-a.social:focus{
-		background-color: #142D3D;
-		font-family: 'Roboto Mono', monospace;
-	}
-a.nav-link{
-	font-weight: normal;
-	font-size: 13px;
-}
-a.nav-link:hover{
-	font-weight: bolder;
 	font-size: 13px;
 }
 
+/*----------------------LINK STYLES-------------------------*/
+a,
+a:link{
+	background-color: #142D3D;
+	text-decoration: none;
+	}
+a:hover{
+	background-color: #F1F080;
+	font-weight: bold;
+}
+a:active,
+a:visited,
+a.social:hover{
+		padding-bottom: 0.25em;
+		background-color: transparent;
+	}
+a.nav-link{
+	background-color: transparent;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+a.nav-link:hover{
+	font-weight: bolder;
+	background-color: #F1F080;
+	font-size: 0.8em;
+}
+a.body-link{
+	background-color: #F1F080;
+	font-weight: bold;
+}
+
 .content{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	width: 60%;
 	margin:auto;
 }
@@ -58,15 +53,12 @@ a.nav-link:hover{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin:auto;
 	height: 100vh;
-	width:100%;
 }
 
 .hello-title{
 	margin-top: 20%;
 	width: 60%;
-	font-family: 'Roboto Mono', monospace;
 	font-size: 50px;
 	color: #142D3D;
 	font-weight: bolder;
