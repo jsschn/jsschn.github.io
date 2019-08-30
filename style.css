@@ -20,7 +20,7 @@ a:link{
 	}
 a:hover{
 	background-color: #F1F080;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 a:active,
 a:visited,
