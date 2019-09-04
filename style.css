@@ -47,16 +47,21 @@ a.body-link:hover{
 	color: #FFFFFF;
 }
 
+.content{
+	width: 50%;
+	margin: auto;
+}
+
 /*----------------------HELLO-------------------------*/
 .hello{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	height: 100vh;
 }
 
 .hello-title{
+	margin-top: 20%;
 	width: 60%;
 	font-size: 3em;
 	font-weight: bolder;
