@@ -53,6 +53,14 @@ a.body-link:hover{
 	margin: auto;
 }
 
+.body-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+	width:100%;
+}
+
 .date{
 	display: flex;
 	width: 60%;
@@ -142,29 +150,12 @@ a.body-link:hover{
 	min-width: 300px;
 }
 
-/*----------------------DX-------------------------*/
-.dx{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:auto;
-	width:100%;
-}
-
+/*---------------------IMAGE STYLING-------------------------*/
 .dx-img{
 	width:360px;
 	height:420px;
 	padding-top:50px;
 	padding-bottom:50px;">
-}
-
-/*----------------------AVIATION-------------------------*/
-.aviation{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:auto;
-	width:100%;
 }
 
 .aviation-img{
@@ -174,29 +165,11 @@ a.body-link:hover{
 	padding-bottom:50px;
 }
 
-/*----------------------DATAVIZ-------------------------*/
-.dataviz{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:auto;
-	width:100%;
-}
-
 .dataviz-img{
 	width:284px;
 	height:360px;
 	padding-top:50px;
 	padding-bottom:50px;
-}
-
-/*----------------------VISION SCIENCE-------------------------*/
-.vision-science{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:auto;
-	width:100%;
 }
 
 .vision-science-img{
