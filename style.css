@@ -24,9 +24,11 @@ a:hover{
 }
 a:active,
 a:visited,
-a.social:hover{
-		padding-bottom: 0.25em;
+a.social-link{
 		background-color: transparent;
+	}
+a.social-link:hover{
+		transform: translateY(-3px);
 	}
 a.nav-link{
 	background-color: transparent;
@@ -45,6 +47,9 @@ a.body-link{
 a.body-link:hover{
 	background-color: #142D3D;
 	color: #FFFFFF;
+}
+a.menu-icon{
+	background-color: transparent;
 }
 
 /*----------------------CONTENT STYLING-------------------------*/
@@ -215,10 +220,11 @@ a.body-link:hover{
 
 .social-nav{
 	display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 	align-items: center;
   padding: 16px 0;
 	padding-right: 24px;
+	padding-left: 8px;
 	background-color: #142D3D;
 	overflow: hidden;
 	position: fixed;
@@ -227,13 +233,24 @@ a.body-link:hover{
 	height: 10px;
 }
 
+.social-group{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-icon{
+	visibility: hidden;
+}
+
+
 /*----------------------------------RESPONSIVE-----------------------------------*/
 /* Phones: Portrait and Landscape */
 @media (max-width: 767px) {
 		.social-nav{
-			width: 100vw;
-			height: 48px;
-			padding-right: 24px;
+			min-width: 100vw;
+			height: 32px;
+			padding-right: 36px;
+			padding-left: 36px;
 		}
 
 		a:link{
@@ -243,65 +260,19 @@ a.body-link:hover{
 			background-color: #F1F080;
 			}
 
-		a.social{
-				background-color: #142D3D;
-			}
+		a.menu-icon{
+			visibility: visible;
+			background-color: transparent;
+		}
+
+		a.social-link{
+			background-color: transparent;
+		}
 
 		.nav{
 			visibility: hidden;
 		}
-
-		/************* nav menu ******************/
-		/* main menu block */
-	.nav {
-		background-color: #fff;
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: 100;
-		height: 100%;
-		width: 100%;
-		display: table;
-		text-align: center;
-		opacity: 0;
-		transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		transform: scale(0);
-		&.act {
-			opacity: 1;
-			transform: scale(1);
-			ul li {
-			opacity: 1;
-			transform: translateX(0);
-		}
-		}
-		ul {
-			display: table-cell;
-			vertical-align: middle;
-		}
-		li {
-			padding: 8px 0;
-			transition: all 400ms 510ms;
-			opacity: 0;
-			&:nth-child(odd) {
-				transform: translateX(30%);
-			}
-			&:nth-child(even) {
-				transform: translateX(-30%);
-			}
-			&:last-child {
-				transform: none;
-			}
-		}
-		a {
-			color: #19b698;
-			display: inline-block;
-			font-size: 18px;
-			&.suBtn {
-				color: #fff;
-			}
-		}
 	}
-}
 
 
 /* Tablets*/
