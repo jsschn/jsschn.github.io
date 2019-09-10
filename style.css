@@ -224,7 +224,7 @@ a.menu-icon{
 	align-items: center;
   padding: 16px 0;
 	padding-right: 24px;
-	padding-left: 8px;
+	padding-left: 24px;
 	background-color: #142D3D;
 	overflow: hidden;
 	position: fixed;
@@ -287,19 +287,96 @@ a.menu-icon{
 		}
 	}
 
-
-/* Tablets*/
-@media (min-device-width: 768px)
-  and (max-device-width: 1024px){
-		.content{
-			width: 100%;
-		}
-		.bottom-nav{
-			width: 100%;
-			padding-right: 24px;
-		}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
 		a:link{
+			font-weight: bolder;
+			color: #142D3D;
+			text-decoration: none;
 			background-color: #F1F080;
 			}
-		a:social{}
+
+		.content{
+			overflow: hidden;
+			min-width: 268px;
+			width: 100%;
+		}
+
+		.navigation{
+				width: 100vw;
+		}
+
+		.social-nav{
+			min-width: 320px;
+			width: 100%;
+			height: 32px;
+			padding-right: 100px;
+			padding-left: 100px;
+			position: fixed;
+			bottom: 0;
+			overflow: hidden;
+		}
+
+		a.menu-icon{
+			visibility: visible;
+			background-color: transparent;
+		}
+
+		a.social-link{
+			background-color: transparent;
+		}
+
+		.nav{
+			visibility: hidden;
+		}
 }
+
+/* iPads */
+@media only screen
+	and (min-width: 768px)
+  and (max-width: 1024px){
+		a:link{
+			font-weight: bolder;
+			color: #142D3D;
+			text-decoration: none;
+			background-color: #F1F080;
+			}
+
+		.content{
+			overflow: hidden;
+			min-width: 268px;
+			width: 100%;
+		}
+
+		.navigation{
+				width: 100vw;
+		}
+
+		.social-nav{
+			min-width: 320px;
+			width: 100%;
+			height: 32px;
+			padding-right: 100px;
+			padding-left: 100px;
+			position: fixed;
+			bottom: 0;
+			overflow: hidden;
+		}
+
+		a.menu-icon{
+			visibility: visible;
+			background-color: transparent;
+		}
+
+		a.social-link{
+			background-color: transparent;
+		}
+
+		.nav{
+			visibility: hidden;
+		}
+	}
