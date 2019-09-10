@@ -98,22 +98,22 @@
 	</div>
 
 	<div class="navigation">
-		<ul class="nav">
+		<ul class="nav" id="nav">
 			<li><a class="nav-link" href="#hello-link">Hello</a><li>
-			<div class="bullet">&bull;</div>
+			<li class="bullet">&bull;</li>
 			<li><a class="nav-link" href="#tldr-link">TL;DR</a></li>
-			<div class="bullet">&bull;</div>
+			<li class="bullet">&bull;</li>
 			<li><a class="nav-link" href="#dx-link">DX</a></li>
-			<div class="bullet">&bull;</div>
+			<li class="bullet">&bull;</li>
 			<li><a class="nav-link" href="#aviation-link">Aviation</a></li>
-			<div class="bullet">&bull;</div>
+			<li class="bullet">&bull;</li>
 			<li><a class="nav-link" href="#datavis-link">DataVis</a></li>
-			<div class="bullet">&bull;</div>
+			<li class="bullet">&bull;</li>
 			<li><a class="nav-link" href="#vision-science-link">Vision Science</a></li>
 		</ul>
 		<nav class="social-nav">
 			<a href="javascript:void(0);" class="menu-icon" onclick="openMenu()">
-    		<img src="images/menu.svg" alt="Menu Icon" style="width:20px;height:20px;padding:8px;border:0;"></a>
+    		<img src="images/menu.svg" id="menu-icon" alt="Menu Icon" style="width:20px;height:20px;padding:8px;border:0;"></a>
 			<div class="social-group">
 				<a class="social-link" href="https://www.linkedin.com/in/jsschn" target="_blank">
 		  		<img src="images/linkedin.svg" alt="LinkedIn" style="width:20px;height:20px;padding:8px;border:0;"></a>
@@ -124,4 +124,18 @@
 			</div>
 		</nav>
 	</div>
+	<script>
+		function openMenu() {
+			var x = document.getElementById("nav");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				document.getElementById("menu-icon").src="images/menu.svg";
+				document.getElementById("menu-icon").style="width:20px;height:20px;padding:8px;border:0;";
+			} else {
+				x.style.display = "block";
+				document.getElementById("menu-icon").src="images/exit.svg";
+				document.getElementById("menu-icon").style="width:16px;height:16px;padding:8px;border:0;";
+			}
+		}
+	</script>
 </body>

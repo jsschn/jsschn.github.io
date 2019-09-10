@@ -247,6 +247,7 @@ a.menu-icon{
 /* Phones: Portrait and Landscape */
 @media (max-width: 767px) {
 		.social-nav{
+			position:fixed;
 			min-width: 320px;
 			height: 32px;
 			padding-right: 48px;
@@ -254,6 +255,7 @@ a.menu-icon{
 			position: fixed;
 			bottom: 0;
 			overflow: hidden;
+			z-index: 3;
 		}
 
 		.content{
@@ -283,57 +285,24 @@ a.menu-icon{
 		}
 
 		.nav{
+			display: none;
+			position: fixed;
+			font-size: 2.5em;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 150;
+			background-color: rgba(20,45,61,0.9);
+			z-index: 2;
+			cursor: pointer;
+		}
+
+		.bullet{
 			visibility: hidden;
 		}
 	}
-
-/* ----------- iPad Pro ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-width: 1024px)
-  and (max-height: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-		a:link{
-			font-weight: bolder;
-			color: #142D3D;
-			text-decoration: none;
-			background-color: #F1F080;
-			}
-
-		.content{
-			overflow: hidden;
-			min-width: 268px;
-			width: 100%;
-		}
-
-		.navigation{
-				width: 100vw;
-		}
-
-		.social-nav{
-			min-width: 320px;
-			width: 100%;
-			height: 32px;
-			padding-right: 100px;
-			padding-left: 100px;
-			position: fixed;
-			bottom: 0;
-			overflow: hidden;
-		}
-
-		a.menu-icon{
-			visibility: visible;
-			background-color: transparent;
-		}
-
-		a.social-link{
-			background-color: transparent;
-		}
-
-		.nav{
-			visibility: hidden;
-		}
-}
 
 /* iPads */
 @media only screen
@@ -365,6 +334,7 @@ a.menu-icon{
 			position: fixed;
 			bottom: 0;
 			overflow: hidden;
+			z-index: 3;
 		}
 
 		a.menu-icon{
@@ -377,6 +347,69 @@ a.menu-icon{
 		}
 
 		.nav{
+			display: none;
+			position: fixed;
+			font-size: 2.5em;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 150;
+			background-color: rgba(20,45,61,0.9);
+			z-index: 2;
+			cursor: pointer;
+		}
+
+		.bullet{
 			visibility: hidden;
 		}
 	}
+
+	/* ----------- iPad Pro ----------- */
+	/* Portrait and Landscape */
+	/*@media only screen
+	  and (min-width: 1024px)
+	  and (max-height: 1366px)
+	  and (-webkit-min-device-pixel-ratio: 1.5){
+			a:link{
+				font-weight: bolder;
+				color: #142D3D;
+				text-decoration: none;
+				background-color: #F1F080;
+				}
+
+			.content{
+				overflow: hidden;
+				min-width: 268px;
+				width: 100%;
+			}
+
+			.navigation{
+					width: 100vw;
+			}
+
+			.social-nav{
+				min-width: 320px;
+				width: 100%;
+				height: 32px;
+				padding-right: 100px;
+				padding-left: 100px;
+				position: fixed;
+				bottom: 0;
+				overflow: hidden;
+			}
+
+			a.menu-icon{
+				visibility: visible;
+				background-color: transparent;
+			}
+
+			a.social-link{
+				background-color: transparent;
+			}
+
+			.nav{
+				visibility: hidden;
+			}
+	}*/
