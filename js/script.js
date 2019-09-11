@@ -1,8 +1,3 @@
-function openMenu() {
-  var x = document.getElementById("nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+<script>
+  import smoothscroll from 'smoothscroll-polyfill';
+  smoothscroll.polyfill();</script>

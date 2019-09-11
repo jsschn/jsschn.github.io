@@ -4,6 +4,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="reset.css">
+	<script>
+		import smoothscroll from 'smoothscroll-polyfill';
+	</script>
 </head>
 <body>
 	<div class="content">
@@ -98,19 +101,30 @@
 	</div>
 
 	<div class="navigation">
-		<ul class="nav" id="nav">
-			<li><a class="nav-link" href="#hello-link">Hello</a><li>
+		<ul class="nav">
+			<li><a class="nav-link" href="#hello-link" onClick="closeMenu()">Hello</a><li>
 			<li class="bullet">&bull;</li>
-			<li><a class="nav-link" href="#tldr-link">TL;DR</a></li>
+			<li><a class="nav-link" href="#tldr-link" onClick="closeMenu()">TL;DR</a></li>
 			<li class="bullet">&bull;</li>
-			<li><a class="nav-link" href="#dx-link">DX</a></li>
+			<li><a class="nav-link" href="#dx-link" onClick="closeMenu()">DX</a></li>
 			<li class="bullet">&bull;</li>
-			<li><a class="nav-link" href="#aviation-link">Aviation</a></li>
+			<li><a class="nav-link" href="#aviation-link" onClick="closeMenu()">Aviation</a></li>
 			<li class="bullet">&bull;</li>
-			<li><a class="nav-link" href="#datavis-link">DataVis</a></li>
+			<li><a class="nav-link" href="#datavis-link" onClick="closeMenu()">DataVis</a></li>
 			<li class="bullet">&bull;</li>
-			<li><a class="nav-link" href="#vision-science-link">Vision Science</a></li>
+			<li><a class="nav-link" href="#vision-science-link" onClick="closeMenu()">Vision Science</a></li>
 		</ul>
+
+		/**** mobile nav ****/
+		<ul class="mobile-nav" id="mobile-nav">
+			<li><a class="nav-link" href="#hello-link" onClick="closeMenu()">Hello</a><li>
+			<li><a class="nav-link" href="#tldr-link" onClick="closeMenu()">TL;DR</a></li>
+			<li><a class="nav-link" href="#dx-link" onClick="closeMenu()">DX</a></li>
+			<li><a class="nav-link" href="#aviation-link" onClick="closeMenu()">Aviation</a></li>
+			<li><a class="nav-link" href="#datavis-link" onClick="closeMenu()">DataVis</a></li>
+			<li><a class="nav-link" href="#vision-science-link" onClick="closeMenu()">Vision Science</a></li>
+		</ul>
+
 		<nav class="social-nav">
 			<a href="javascript:void(0);" class="menu-icon" onclick="openMenu()">
     		<img src="images/menu.svg" id="menu-icon" alt="Menu Icon" style="width:20px;height:20px;padding:8px;border:0;"></a>
@@ -126,7 +140,7 @@
 	</div>
 	<script>
 		function openMenu() {
-			var x = document.getElementById("nav");
+			var x = document.getElementById("mobile-nav");
 			if (x.style.display === "block") {
 				x.style.display = "none";
 				document.getElementById("menu-icon").src="images/menu.svg";
@@ -136,6 +150,13 @@
 				document.getElementById("menu-icon").src="images/exit.svg";
 				document.getElementById("menu-icon").style="width:16px;height:16px;padding:8px;border:0;";
 			}
+		}
+		function closeMenu() {
+			var x = document.getElementById("mobile-nav");
+			x.style.display = "none";
+			smoothscroll.polyfill();
+			document.getElementById("menu-icon").src="images/menu.svg";
+			document.getElementById("menu-icon").style="width:20px;height:20px;padding:8px;border:0;";
 		}
 	</script>
 </body>

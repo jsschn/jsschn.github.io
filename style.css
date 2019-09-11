@@ -286,8 +286,13 @@ a.menu-icon{
 
 		.nav{
 			display: none;
+		}
+
+		.mobile-nav{
+			display: none;
 			position: fixed;
 			font-size: 2.5em;
+			line-height: 1.5em;
 			width: 100%;
 			height: 100%;
 			top: 0;
@@ -299,9 +304,6 @@ a.menu-icon{
 			cursor: pointer;
 		}
 
-		.bullet{
-			visibility: hidden;
-		}
 	}
 
 /* iPads */
@@ -348,8 +350,13 @@ a.menu-icon{
 
 		.nav{
 			display: none;
+		}
+
+		.mobile-nav{
+			display: none;
 			position: fixed;
 			font-size: 2.5em;
+			line-height: 1.5em;
 			width: 100%;
 			height: 100%;
 			top: 0;
@@ -359,10 +366,6 @@ a.menu-icon{
 			background-color: rgba(20,45,61,0.9);
 			z-index: 2;
 			cursor: pointer;
-		}
-
-		.bullet{
-			visibility: hidden;
 		}
 	}
 
