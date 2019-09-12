@@ -4,9 +4,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="reset.css">
-	<script>
+	<!-- <script>
 		import smoothscroll from 'smoothscroll-polyfill';
-	</script>
+	</script> -->
 </head>
 <body>
 	<div class="content">
@@ -125,7 +125,7 @@
 			<li><a class="nav-link" href="#vision-science-link" onClick="closeMenu()">Vision Science</a></li>
 		</ul>
 
-		<nav class="social-nav">
+		<div class="social-nav">
 			<a href="javascript:void(0);" class="menu-icon" onclick="openMenu()">
     		<img src="images/menu.svg" id="menu-icon" alt="Menu Icon" style="width:20px;height:20px;padding:8px;border:0;"></a>
 			<div class="social-group">
@@ -136,17 +136,17 @@
 				<a class="social-link" href="mailto:itsjessiechen@gmail.com" target="_blank">
 		  		<img src="images/mail.svg" alt="Email" style="width:20px;height:20px;padding:8px;border:0;"></a>
 			</div>
-		</nav>
+		</div>
 	</div>
 	<script>
 		function openMenu() {
 			var x = document.getElementById("mobile-nav");
-			if (x.style.display === "block") {
+			if (x.style.display === "inline-block") {
 				x.style.display = "none";
 				document.getElementById("menu-icon").src="images/menu.svg";
 				document.getElementById("menu-icon").style="width:20px;height:20px;padding:8px;border:0;";
 			} else {
-				x.style.display = "block";
+				x.style.display = "inline-block";
 				document.getElementById("menu-icon").src="images/exit.svg";
 				document.getElementById("menu-icon").style="width:16px;height:16px;padding:8px;border:0;";
 			}
@@ -154,7 +154,7 @@
 		function closeMenu() {
 			var x = document.getElementById("mobile-nav");
 			x.style.display = "none";
-			smoothscroll.polyfill();
+			// smoothscroll.polyfill();
 			document.getElementById("menu-icon").src="images/menu.svg";
 			document.getElementById("menu-icon").style="width:20px;height:20px;padding:8px;border:0;";
 		}
