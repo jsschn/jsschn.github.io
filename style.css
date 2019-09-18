@@ -243,6 +243,10 @@ a.menu-icon{
 	visibility: hidden;
 }
 
+.mobile-nav{
+	display: none;
+}
+
 
 /*----------------------------------RESPONSIVE-----------------------------------*/
 /* Phones: Portrait and Landscape */
