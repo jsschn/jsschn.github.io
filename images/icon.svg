@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Video Thumbnail</title>
+    <g id="Video-Thumbnail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="180" height="180"></rect>
+        <g id="Group-6-Copy-4" transform="translate(37.000000, 37.000000)" stroke="#142D3D" stroke-linecap="round" stroke-width="8">
+            <line x1="3.5" y1="51.5" x2="98.5775695" y2="51.5" id="Line-10"></line>
+            <line x1="8.18545232e-12" y1="52.0000026" x2="104.747596" y2="51.9999974" id="Line-10-Copy" transform="translate(52.373798, 52.000000) rotate(30.000000) translate(-52.373798, -52.000000) "></line>
+            <line x1="6.36646291e-12" y1="51.9999985" x2="104.747596" y2="52.0000015" id="Line-10-Copy-2" transform="translate(52.373798, 52.000000) rotate(60.000000) translate(-52.373798, -52.000000) "></line>
+            <line x1="-3.30962465e-16" y1="52.5" x2="105" y2="52.5" id="Line-10-Copy-3" transform="translate(52.500000, 52.500000) rotate(90.000000) translate(-52.500000, -52.500000) "></line>
+            <line x1="1.36424205e-11" y1="52.0000002" x2="104.747596" y2="51.9999998" id="Line-10-Copy-4" transform="translate(52.373798, 52.000000) rotate(120.000000) translate(-52.373798, -52.000000) "></line>
+            <line x1="0" y1="51.9999925" x2="104.747596" y2="52.0000075" id="Line-10-Copy-5" transform="translate(52.373798, 52.000000) rotate(150.000000) translate(-52.373798, -52.000000) "></line>
+        </g>
+    </g>
+</svg>
